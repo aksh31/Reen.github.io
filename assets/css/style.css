@@ -1,0 +1,390 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.arrow
+{
+	width:40px;
+	height:40px;
+	color:#949ba2;
+	background-color:#3c5065;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	z-index:10;
+	border-radius:5px;
+	font-size:20px;
+	font-weight:bolder;
+	padding:8px 11px;
+	cursor:pointer;
+}
+/* ====================Helper Classes================= */
+a:link, a:hover, a:focus, a:active
+{
+	text-decoration:none;
+}
+.row, .row::after, .row::before
+{
+	clear:both;
+	display:table;
+	width:100%;
+}
+.row > :first-child
+{
+	padding-left:0;
+}
+.row > :last-child
+{
+	padding-right:0;
+}
+.bg-color
+{
+	background-color:#f5f7fa;
+}
+.pd-navbar
+{
+	padding:36px 0;
+}
+.container
+{
+	width:1170px;
+	margin:0 auto;
+}
+.col-2, .col-3, .col-4, .col-6, .col-8, .col-9, .col-10
+{
+	float:left;
+	padding:0 15px;
+}
+.col-2
+{
+	width:calc((100% * 2) / 12);
+}
+.col-3
+{
+	width:calc((100% * 3) / 12);
+}
+.col-4
+{
+	width:calc((100% * 4) / 12);
+}
+.col-6
+{
+	width:50%;
+}
+.col-8
+{
+	width:calc((100% * 8) / 12);
+}
+.col-9
+{
+	width:calc((100% * 9) / 12);
+}
+.col-10
+{
+	width:calc((100% * 10) / 12);
+}
+.ml-grid2
+{
+	margin-left:calc((100% * 2) / 12);
+}
+.mb-80
+{
+	margin-bottom:80px;
+}
+.mb-78
+{
+	margin-bottom:78px;
+}
+.mb-45
+{
+	margin-bottom:45px;
+}
+.mb-42
+{
+	margin-bottom:42px;
+}
+.mb-25
+{
+	margin-bottom:25px;
+}
+.ml-21
+{
+	margin-left: -21px;
+}
+.mr-7px
+{
+	margin-right: -7px;
+}
+.text-right
+{
+	text-align:right;
+}
+.text-center
+{
+	text-align:center;
+}
+.text-up
+{
+	text-transform:uppercase;
+}
+/* =======================================================================Header Section css======================================================================= */
+.cont-links li, .cont-icons li, .copyright li
+{
+	list-style:none;
+	display:inline-block;
+	margin:0 7px;
+}
+.cont-links li:first-child a
+{
+	margin-left:-14px;
+}
+.cont-icons li
+{
+	margin:0 3px;
+}
+.cont-links li a, .cont-icons li a
+{
+	display:inline-block;
+	font-size:12px;
+	color:#506a85;
+	padding:7px;
+}
+/* ====== Navbar CSS ====== */
+.navbar li
+{
+	list-style:none;
+	display:inline-block;
+	margin:0 10px;
+}
+.navbar li a
+{
+	display:inline-block;
+	font-size:15px;
+	font-weight:bold;
+	color:#506a85;
+	padding:12px;
+}
+.search a i
+{
+	padding:12px;
+	color:#506a85;
+	margin-right:24px;
+}
+/* =======================================================================HeroImage Section css======================================================================= */
+.heroimage
+{
+	background-image:url("../images/heroimg.jpg");
+	background-size:cover;
+	width:100%;
+	height:100vh;
+	position:relative;
+}
+.caption
+{
+	position:absolute;
+	z-index:5;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.caption h1
+{
+	font-size:70px;
+	color:#fff;
+	margin-bottom:35px;
+	font-family: 'Lato', sans-serif;
+}
+.caption p
+{
+	font-size:24px;
+	color:#a3b1bf;
+	margin-bottom:61px;
+}
+.caption-btn
+{
+	background-color:#00bb9b;
+	padding:25px 70px;
+	outline:none;
+	border:2px solid #00bb9b;
+	border-radius:5px;
+	font-size:18px;
+	color:#fff;
+	font-weight:bolder;
+	cursor:pointer;
+}
+.caption-btn:hover, .caption-btn:focus, .caption-btn:active, .input-btn:hover, .input-btn:focus, .input-btn:active
+{
+	background-color:#fff;
+	color:#00bb9b;
+}
+/* =======================================================================Responsive Section css======================================================================= */
+.responsive
+{
+	padding:130px 0;
+}
+.info h2
+{
+	font-size:44px;
+	color:#506a85;
+	margin-bottom:36px;
+}
+.info p
+{
+	font-size:22px;
+	color:#73879c;
+	line-height:1.5;
+}
+/* ====== Navbar CSS ====== */
+.thumb-icon i
+{
+	font-size:65px;
+	color:#00bb9b;
+	padding-left: 15px;
+}
+.thumb-info h3
+{
+	font-size:26px;
+	color:#506a85;
+	margin-bottom:35px;
+	font-family: 'Lato', sans-serif;
+}
+.thumb-info p
+{
+	font-size:16px;
+	color:#73879c;
+}
+/* =======================================================================Brands Section css======================================================================= */
+.brands
+{
+	background-color:#f2f5f7;
+	padding:131px 0 137px;
+}
+.brand-img img, .thumb-img
+{
+	width:100%;
+	height:100%;
+}
+.img-caption
+{
+	padding:34px 0 30px;
+	background-color:#fff;
+}
+.img-caption h4
+{
+	font-size:20px;
+	color:#506a85;
+	font-family: 'Lato', sans-serif;
+	margin-bottom:13px;
+}
+.img-caption p
+{
+	font-size:14px;
+	color:#73879c;
+}
+/* ====== Three Dots CSS ====== */
+.dots li
+{
+	width:16px;
+	height:16px;
+	background-color:#506a85;
+	border-radius:25px;
+	display:inline-block;
+}
+.dots li.two
+{
+	background-color:#00bc9c;
+}
+/* =======================================================================Get-in-touch Section css======================================================================= */
+.get-in-touch
+{
+	padding:130px 0;
+}
+/* =======================================================================Footer Section css======================================================================= */
+.first-row
+{
+	padding:75px 0;
+	background-color:#2f4052;
+}
+.footer-info h4
+{
+	font-size:16px;
+	color:#fff;
+	margin-bottom:27px;
+	text-transform:uppercase;
+	font-family: 'Lato', sans-serif;
+}
+.footer-info p
+{
+	font-size:14px;
+	color:#a3b1bf;
+	margin-bottom:23px;
+}
+.footer-info a
+{
+	font-size:15px;
+	font-weight:bolder;
+	color:#a3b1bf;
+}
+.footer-info a i
+{
+	padding-left:5px;
+	font-size:12px;
+}
+.foot-contact li
+{
+	list-style:none;
+	margin-bottom:8px;
+}
+.foot-contact li a
+{
+	font-size:14px;
+	font-weight:lighter;
+}
+.input-email, .input-btn
+{
+	border-radius:5px;
+	outline:none;
+}
+.input-email
+{
+	background-color:#4e5c6b;
+	border:0;
+	padding:15px 0 15px 12px;
+	width:100%;
+	font-size:14px;
+	color:#a3b1bf;
+}
+.f-input
+{
+	position:relative;
+}
+.input-btn
+{
+	background-color:#00bc9c;
+	border:2px solid #00bb9b;
+	padding:10px;
+	position:absolute;
+	font-size:13px;
+	color:#ffffff;
+	font-weight:bolder;
+	right: 4px;
+    bottom: 4px;
+}
+/* ====== Footer Last Row CSS ====== */
+.last-row
+{
+	background-color:#273545;
+	padding:35px 0;
+}
+.copyright li a
+{
+	font-size:14px;
+	color:#707e8c;
+}
+.copyright li:first-child a
+{
+	margin-left: -7px;
+}
